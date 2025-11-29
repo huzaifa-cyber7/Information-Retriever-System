@@ -1,7 +1,16 @@
-python-dotenv
-langchain
-google-generativeai
-PyPDF2
-faiss-cpu
-streamlit
--e .
+langchain==0.3.7
+langchain-core==0.3.26
+langchain-community==0.3.7
+langchain-text-splitters==0.3.2
+
+faiss-cpu==1.10.0
+
+langchain-openai==0.2.6
+langchain-google-genai==2.0.5
+
+fastapi==0.115.5
+uvicorn==0.32.1
+
+pydantic==2.10.3
+python-dotenv==1.0.1
+tiktoken==0.8.0

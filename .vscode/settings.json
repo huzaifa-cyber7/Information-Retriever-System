@@ -1,7 +1,17 @@
 {
+    // Sets the default Python interpreter for the entire workspace
+    "python.defaultInterpreterPath": "C:\\Users\\Thinkpad\\anaconda3\\envs\\genai\\python.exe",
+    
+    // Explicitly tells Pylance/Jedi where to find installed packages
     "python.analysis.extraPaths": [
-        "${workspaceFolder}/src",
-        "${workspaceFolder}/research"
+        "C:\\Users\\Thinkpad\\anaconda3\\envs\\genai\\Lib\\site-packages"
     ],
-    "python.linting.enabled": true
+    
+    // Ensures the integrated terminal uses this same environment
+    "python.terminal.activateEnvironment": true,
+    
+    // Recommended for better Pylance error reporting visibility
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "warning"
+    }
 }
